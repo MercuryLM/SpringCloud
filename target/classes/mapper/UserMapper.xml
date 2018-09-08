@@ -2,10 +2,19 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">  
 <mapper namespace="com.school.dao.IUserDao">  
   <resultMap id="BaseResultMap" type="com.school.model.User" >  
-    <id column="id" property="id" jdbcType="INTEGER" />  
-    <result column="user_name" property="userName" jdbcType="VARCHAR" />  
-    <result column="password" property="password" jdbcType="VARCHAR" />  
-    <result column="age" property="age" jdbcType="INTEGER" />  
+    <id column="user_id" property="user_id" jdbcType="NUMERIC" />  
+    <result column="login_name" property="login_name" jdbcType="VARCHAR" />  
+    <result column="login_password" property="login_password" jdbcType="VARCHAR" />  
+    <result column="create_date" property="create_date" jdbcType="DATE" />  
+    <result column="pause_date" property="pause_date" jdbcType="DATE" />  
+    <result column="close_date" property="close_date" jdbcType="DATE" />  
+    <result column="real_name" property="real_name" jdbcType="VARCHAR" />
+    <result column="idcard_no" property="idcard_no" jdbcType="CHAR" />  
+    <result column="birth_date" property="birth_date" jdbcType="DATE" />  
+    <result column="sex" property="sex" jdbcType="CHAR" />
+    <result column="user_telephone" property="user_telephone" jdbcType="NUMERIC" />  
+    <result column="user_email" property="user_email" jdbcType="VARCHAR" />  
+    <result column="user_occupation" property="user_occupation" jdbcType="VARCHAR" />
   </resultMap>  
   <sql id="Base_Column_List" >  
     id, user_name, password, age  
